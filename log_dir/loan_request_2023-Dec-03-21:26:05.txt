@@ -1,0 +1,3 @@
+2023-Dec-03-21:26:05 : New loan request received. File name: workdir/new_loan_request/rejected_02.txt  
+2023-Dec-03-21:26:05 : workdir/new_loan_request/rejected_02.txt parse started.  
+2023-Dec-03-21:26:05 : Loan request rejected: the file rejected_02.txt don't complain to the format. It contains 3 lines.  

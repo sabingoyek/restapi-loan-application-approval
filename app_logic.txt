@@ -1,0 +1,87 @@
+watching for new file in loan application folder
+if new file detected:
+log progress
+1- Read and parse the content of the file
+    - Move the file to under assessment folder
+    - if the content of the file meet requirement
+        - log progression
+        - Go to step 2
+    - else
+        - log the reason
+        - send the result to customer
+        - END
+2- Pre-assessment
+    - log progress
+    - if the customer exist and the house exist:
+        - log progress
+        - Go to step 3
+    else:
+        - log the reason
+        - send the result to customer
+        - END
+3-  Create the loan request
+    - log progress
+    - call loan request creation service
+    - if the call succeed:
+        - log progress
+        - send the loan request ID to customer
+        - Move to step 4
+    - else:
+        - log the reason
+        - send a message to customer (ask him to try later)
+        - END
+4- Business Rule Check
+    - log progress
+    - if the loan request duration and amount respect the company rule:
+        - log progress
+        - Go to step 5
+    else:
+        - log the progress and reason
+        - Change the status of the loan request
+        - Move the file from under review folder to rejected folder
+        - send the result to customer
+        - END
+5- Customer solvability check
+    - log progress
+    - call customer solvability checker service
+    - if the call succeed:
+        - Save the result 
+        - log progress
+        - Go to step 6
+    - else:
+        - log the reason
+        - send a message to customer (ask him to try later)
+        - END
+6- call property evaluation service
+    - log progress
+    - call property price prediction service
+    - if the call succeed:
+        - Save the result 
+        - log progress
+        - Go to step 7
+    - else:
+        - log the reason
+        - send a message to customer (ask him to try later)
+        - END
+7- Global score computation
+    - log progress
+    - Use customer score, properrty evaluation score, balance, loan amount and loan duration to compute a gloabal score
+    - if the global score is grether than a treshold
+        - log progress
+        - move the file to accepted
+        - change the loan request status
+        - create a loan by calling loan service
+        - send a message to customer
+        - END
+    else:
+        - log progress
+        - move the file to rejected
+        - change the loan request status
+        - send a message to customer
+        - END
+
+
+
+curl -X 'GET' \
+  'http://127.0.0.1:8000/customers/?skip=0&limit=100' \
+  -H 'accept: application/json'

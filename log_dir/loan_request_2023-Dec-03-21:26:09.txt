@@ -1,0 +1,11 @@
+2023-Dec-03-21:26:09 : New loan request received. File name: workdir/new_loan_request/rejected_03.txt  
+2023-Dec-03-21:26:09 : workdir/new_loan_request/rejected_03.txt parse started.  
+2023-Dec-03-21:26:09 : workdir/new_loan_request/rejected_03.txt parse completed.  
+2023-Dec-03-21:26:09 : Pre-assessment phase started.  
+2023-Dec-03-21:26:09 : Check if customer exist started.  
+2023-Dec-03-21:26:09 : Check if house exist started.  
+2023-Dec-03-21:26:09 : Pre-assessment phase completed.  
+2023-Dec-03-21:26:09 : Loan request creation started.  
+2023-Dec-03-21:26:09 : Loan request creation completed.  
+2023-Dec-03-21:26:09 : Loan request creation completed. Business rule check started  
+2023-Dec-03-21:26:09 : Loan amount 300 don't complain with business rule. The loan request is rejected  

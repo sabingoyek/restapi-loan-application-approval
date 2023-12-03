@@ -1,0 +1,3 @@
+Votre Identifiant: 1
+Montant: 20000 Durée: 20
+Identifiant de la maison: 1

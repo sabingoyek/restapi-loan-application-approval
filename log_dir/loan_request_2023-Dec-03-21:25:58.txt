@@ -1,0 +1,21 @@
+2023-Dec-03-21:25:58 : New loan request received. File name: workdir/new_loan_request/accepted_02.txt  
+2023-Dec-03-21:25:58 : workdir/new_loan_request/accepted_02.txt parse started.  
+2023-Dec-03-21:25:58 : workdir/new_loan_request/accepted_02.txt parse completed.  
+2023-Dec-03-21:25:58 : Pre-assessment phase started.  
+2023-Dec-03-21:25:58 : Check if customer exist started.  
+2023-Dec-03-21:25:58 : Check if house exist started.  
+2023-Dec-03-21:25:58 : Pre-assessment phase completed.  
+2023-Dec-03-21:25:58 : Loan request creation started.  
+2023-Dec-03-21:25:58 : Loan request creation completed.  
+2023-Dec-03-21:25:58 : Loan request creation completed. Business rule check started  
+2023-Dec-03-21:25:58 : Business rule check completed.  
+2023-Dec-03-21:25:58 : Customer solvability check started.  
+2023-Dec-03-21:25:58 : Customer solvability check completed.  
+2023-Dec-03-21:25:58 : Property evaluation started.  
+2023-Dec-03-21:25:58 : Property evaluation completed.  
+2023-Dec-03-21:25:58 : Gloabal score computation started.  
+2023-Dec-03-21:25:58 : Gloabal score computation completed.  
+2023-Dec-03-21:25:58 : Loan requested accepted. Loan requested status update started  
+2023-Dec-03-21:25:58 : Loan requested status update completed  
+2023-Dec-03-21:25:58 : Loan creation started  
+2023-Dec-03-21:25:58 : Loan creation completed  
