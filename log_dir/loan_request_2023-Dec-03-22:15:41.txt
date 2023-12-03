@@ -1,0 +1,7 @@
+2023-Dec-03-22:15:41 : New loan request received. File name: workdir/new_loan_request/accepted_01.txt  
+2023-Dec-03-22:15:41 : workdir/new_loan_request/accepted_01.txt parse started.  
+2023-Dec-03-22:15:41 : workdir/new_loan_request/accepted_01.txt parse completed.  
+2023-Dec-03-22:15:41 : Pre-assessment phase started.  
+2023-Dec-03-22:15:41 : Check if customer exist started.  
+2023-Dec-03-22:15:41 : Check if house exist started.  
+2023-Dec-03-22:15:41 : Loan request rejected: House 1 don't exist.  
