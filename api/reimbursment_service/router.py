@@ -1,19 +1,10 @@
-"""
-This module handle the reimbursment made for loans
-"""
-
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
+from database import SessionLocal, get_db
+import schemas
+import crud
 
-from .. import crud, schemas
-from ..database import get_db
-
-router = APIRouter(
-    # prefix="/loans",
-    tags=["Reimbusments"],
-    # dependencies=[Depends(get_token_header)],
-    # responses={404: {"description": "Not found"}},
-)
+router = APIRouter(tags=["Reimbursments"])
 
 
 @router.post("/loans/{loan_id}/reimbursments/", response_model=schemas.Reimbursment)

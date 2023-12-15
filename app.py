@@ -160,11 +160,11 @@ class LoanFileHandler(FileSystemEventHandler):
                                 # 6- Property evaluation service
                                 log_progress(
                                     "Property evaluation started.", log_file)
-                                url = f"{URL}/predict_price/{new_loan_request['house_id']}/"
+                                url = f"{URL}/house_valuation/{new_loan_request['house_id']}/"
                                 response = requests.get(url)
                                 if response.status_code != 200:
                                     log_progress(
-                                        f"Property evaluation failed. Error code: {response.status_code}. The loan request is canceled.")
+                                        f"Property evaluation failed. Error code: {response.status_code}. The loan request is canceled.", log_file)
                                     print(
                                         "System error. Try again later. Thank you.")
                                     # update loan request status

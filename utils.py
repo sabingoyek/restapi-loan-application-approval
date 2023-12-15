@@ -5,8 +5,6 @@ import os
 import shutil
 from datetime import datetime
 
-from api_v1.schemas import LoanRequestCreate
-
 
 def generate_new_log_file_name(log_dir):
     """

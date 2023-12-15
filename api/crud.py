@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, Response, status
 
-from . import models, schemas
+import models, schemas
 
 
 def get_customer(db: Session, customer_id: int):
